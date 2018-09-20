@@ -1,16 +1,10 @@
 import math
 
-a = int(input("Informe valor de a: "))
-b = int(input("Informe valor de b: "))
-c = int(input("Informe valor de c: "))
+x1 = int(input("Digite o valor de x1: "))
+x2 = int(input("Digite o valor de x2: "))
+y1 = int(input("Digite o valor de y1: "))
+y2 = int(input("Digite o valor de y2: "))
 
-delta = b * b - 4 * a * c
-print("delta: ", delta)
+d = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
-if delta >= 0:
-    x1 = (-b + math.sqrt((delta))) / (2 * a)
-    x2 = (-b + math.sqrt((delta))) / (2 * a)
-    print("Raiz x1: ", x1)
-    print("Raiz x2: ", x2)
-else:
-    print("Não existem raízes reais")
+print("Distância entre P1 e P2 é: ", d)
